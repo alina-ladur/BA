@@ -9,7 +9,7 @@ function drawSort() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Банк');
     data.addColumn('number', 'Прибуток(млн грн)');
-    data.addColumn('number', 'Інтернет');
+    data.addColumn('number', 'Головна');
     data.addColumn('number', 'Форуми');
     data.addRows(10);
     for(var i=0; i<10;i++) {

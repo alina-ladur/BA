@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Контент-аналіз банківського сектору</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <script  src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="chart2.js"></script>
+    <script src="bd.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Контент-аналіз банківського сектору</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>PR-метрики</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Розділи</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#ar1">PR-метрики</a>
+                    </li>
+                    <li>
+                        <a href="#ar2">Візуалізація оцінок медіаприсутності</a>
+                    </li>
+<!--                    <li>-->
+<!--                        <a href="#ar3">Home 3</a>-->
+<!--                    </li>-->
+                </ul>
+            </li>
+            <li>
+                <a href="index.html">Головна сторінка - Об'єкти моніторингу</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Зміст</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="page1.html">Сторінка 1 - Динаміка</a>
+                    </li>
+                    <li>
+                        <a href="page2.html">Сторінка 2 - PR-метрики</a>
+                    </li>
+                    <li>
+                        <a href="page3.html">Сторінка 3 - Банківські продукти</a>
+                    </li>
+                </ul>
+            </li>
+<!--            <li>-->
+<!--                <a href="#">Portfolio</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#">Contact</a>-->
+<!--            </li>-->
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+<!--            <li>-->
+<!--                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>-->
+<!--            </li>-->
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Меню</span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Об'єкти моніторингу</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page1.html">Динаміка</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="page2.html">PR-метрики</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page3.html">Банківські продукти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <h2 id="ar1" class="ar1">PR-метрики</h2>
+        <h4>Результативні показники  MFI, MV, MQ, NS розраховані на основі первинних даних моніторингу Інтернет-простору системою InfoStream БД Головна</h4>
+        <div id="1_div"></div>
+
+        <div class="line"></div>
+
+        <h4 id="ar2" class="ar1">Візуалізація оцінок медіаприсутності топ-10 банків України в Інтернет-просторі</h4>
+        <div class="wrapper1" id="N">
+            <div class="box1"><h4>Згадування у медіа</h4>
+                <p>Кількість публікацій про компанію, її спікерів, продукти. Аналіз згадок демонструє, як добре аудиторії, у тому числі медіа, розуміють, хто ви, ваші переваги та відмінності. Про що говорять конкуренти, яке ставлення до ринку загалом, які ніші для комунікацій залишаються вільними. </p>
+            </div>
+        </div>
+        <div class="row-12">
+            <select id="s_p3" class="selectpicker" >
+                <option value="Кількість Публікацій" >Кількість Публікацій</option>
+                <option value="Тональність">Тональність</option>
+                <option value="MFI">MFI</option>
+                <option value="MV">MV</option>
+                <option value="MQ">MQ</option>
+                <option value="NS">NS</option>
+            </select>
+            <button id="click_p3">Показати</button>
+         </div>
+
+        <div class="row">
+            <div class="col-5" id="2_div"></div>
+            <div class="col-7" id="2chart_div" ></div>
+        </div>
+
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <a href="#" id="toTop">
+        <svg width="10pt" height="10pt" viewBox="0 0 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <g>
+                    <path d="M489.229,442.468L254.563,37.135c-3.797-6.592-14.677-6.592-18.453,0L1.443,442.468c-1.92,3.307-1.92,7.36-0.021,10.667
+			c1.92,3.307,5.44,5.333,9.259,5.333h469.333c3.819,0,7.339-2.027,9.259-5.333C491.128,449.849,491.128,445.775,489.229,442.468z"/>
+                </g>
+            </g>
+        </svg>
+    </a>
+
+</div>
+
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script type="text/javascript" >
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar, #content').toggleClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+</script>
+
+
+</body>
+
+</html>
